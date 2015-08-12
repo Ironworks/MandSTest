@@ -70,10 +70,18 @@
 
 - (void) testSpaceObjectCanMakeValidMove {
     
-    CGPoint pointToMvoeTo = CGPointMake(5, 5);
-    XCTAssertTrue([myUniverse moveToPoint], @"Valid move should return true");
+    CGPoint pointToMoveTo = CGPointMake(5, 5);
+    XCTAssertTrue([myUniverse moveToPoint:pointToMoveTo], @"Valid move should return true");
     
 }
+
+- (void) testInvalidMoveReturnsNo {
+    
+    CGPoint pointToMoveTo = CGPointMake(11, 11);
+    XCTAssertFalse([myUniverse moveToPoint:pointToMoveTo], @"Invalid move should return false");
+    
+}
+
 
 
 

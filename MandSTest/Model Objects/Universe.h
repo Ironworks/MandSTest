@@ -10,6 +10,7 @@
  *  This class models the universe. The universe is 2-dimensional n * n grid
  *  Assumption the  (0,0) coordinate of the univers is the bottom left corner
  */
+@import CoreGraphics;
 #import <Foundation/Foundation.h>
 
 @interface Universe : NSObject
@@ -41,5 +42,16 @@
  *  @return An instance of Universe
  */
 -(instancetype)initWithDimension:(NSUInteger)dimension;
+
+
+/**
+ *  Check to see if move is legal
+ *
+ *  @param point point to move to
+ *
+ *  @return YES if leagal move, otherwise NO
+ */
+- (BOOL) moveToPoint:(CGPoint)point;
+
 
 @end

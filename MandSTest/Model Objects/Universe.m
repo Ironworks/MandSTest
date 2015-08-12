@@ -38,4 +38,27 @@
     
 }
 
+/**
+ *  Check to see if move is legal
+ *
+ *  @param point point to move to
+ *
+ *  @return YES if leagal move, otherwise NO
+ */
+
+- (BOOL) moveToPoint:(CGPoint)point {
+    
+    if (point.x >= self.minX && point.x <= self.maxX &&
+        point.y >= self. minY && point.y <= self.maxY) {
+        
+        return YES;
+        
+    } else {
+        
+        return NO;
+    }
+    
+    
+}
+
 @end
