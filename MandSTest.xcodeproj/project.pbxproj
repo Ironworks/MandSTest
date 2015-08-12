@@ -13,7 +13,7 @@
 		F07E55E11B7BC16A00E39B91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F07E55DF1B7BC16A00E39B91 /* Main.storyboard */; };
 		F07E55E31B7BC16A00E39B91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07E55E21B7BC16A00E39B91 /* Images.xcassets */; };
 		F07E55E61B7BC16A00E39B91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07E55E41B7BC16A00E39B91 /* LaunchScreen.xib */; };
-		F07E55F21B7BC16A00E39B91 /* MandSTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E55F11B7BC16A00E39B91 /* MandSTestTests.m */; };
+		F07E55FC1B7BC1BC00E39B91 /* UniverseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E55FB1B7BC1BC00E39B91 /* UniverseTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		F07E55E51B7BC16A00E39B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F07E55EB1B7BC16A00E39B91 /* MandSTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MandSTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F07E55F01B7BC16A00E39B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F07E55F11B7BC16A00E39B91 /* MandSTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MandSTestTests.m; sourceTree = "<group>"; };
+		F07E55FB1B7BC1BC00E39B91 /* UniverseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniverseTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +105,8 @@
 		F07E55EE1B7BC16A00E39B91 /* MandSTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				F07E55F11B7BC16A00E39B91 /* MandSTestTests.m */,
 				F07E55EF1B7BC16A00E39B91 /* Supporting Files */,
+				F07E55FB1B7BC1BC00E39B91 /* UniverseTests.m */,
 			);
 			path = MandSTestTests;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F07E55F21B7BC16A00E39B91 /* MandSTestTests.m in Sources */,
+				F07E55FC1B7BC1BC00E39B91 /* UniverseTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
