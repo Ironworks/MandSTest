@@ -53,6 +53,19 @@
     
 }
 
+- (void) testAlienShipHasCoordinates {
+    
+    CGPoint coordinates =  CGPointMake(0, 0);
+    
+    XCTAssertTrue(CGPointEqualToPoint(alienShip.coordinates, coordinates), @"alien ship should have coordinates");
+
+}
+
+- (void) testCanMoveShipForward {
+    
+    XCTAssertTrue([alienShip performManoeuvre:@"FORWARD"], @"alien ship should be able to move forward");
+    
+}
 
 
 - (void)testPerformanceExample {

@@ -16,6 +16,7 @@
     if (self = [super init]) {
         _universe = universe;
         _orientation = ALIEN_SHIP_ORIENTATION_UP; //Assumption: Default orientation to UP.
+        _coordinates = CGPointMake(0, 0); //Assumption: The default coordinates are (0,0)
     }
     return self;
 }
