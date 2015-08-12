@@ -14,6 +14,8 @@
 		F07E55E31B7BC16A00E39B91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F07E55E21B7BC16A00E39B91 /* Images.xcassets */; };
 		F07E55E61B7BC16A00E39B91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07E55E41B7BC16A00E39B91 /* LaunchScreen.xib */; };
 		F07E55FC1B7BC1BC00E39B91 /* UniverseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E55FB1B7BC1BC00E39B91 /* UniverseTests.m */; };
+		F07E56001B7BC81F00E39B91 /* Universe.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E55FF1B7BC81F00E39B91 /* Universe.m */; };
+		F07E56011B7BC81F00E39B91 /* Universe.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E55FF1B7BC81F00E39B91 /* Universe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		F07E55EB1B7BC16A00E39B91 /* MandSTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MandSTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F07E55F01B7BC16A00E39B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F07E55FB1B7BC1BC00E39B91 /* UniverseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniverseTests.m; sourceTree = "<group>"; };
+		F07E55FE1B7BC81F00E39B91 /* Universe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Universe.h; path = "Model Objects/Universe.h"; sourceTree = "<group>"; };
+		F07E55FF1B7BC81F00E39B91 /* Universe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Universe.m; path = "Model Objects/Universe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		F07E55D41B7BC16A00E39B91 /* MandSTest */ = {
 			isa = PBXGroup;
 			children = (
+				F07E55FD1B7BC7F300E39B91 /* Model Objects */,
 				F07E55D91B7BC16A00E39B91 /* AppDelegate.h */,
 				F07E55DA1B7BC16A00E39B91 /* AppDelegate.m */,
 				F07E55DC1B7BC16A00E39B91 /* ViewController.h */,
@@ -117,6 +122,15 @@
 				F07E55F01B7BC16A00E39B91 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F07E55FD1B7BC7F300E39B91 /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F07E55FE1B7BC81F00E39B91 /* Universe.h */,
+				F07E55FF1B7BC81F00E39B91 /* Universe.m */,
+			);
+			name = "Model Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +235,7 @@
 			files = (
 				F07E55DE1B7BC16A00E39B91 /* ViewController.m in Sources */,
 				F07E55DB1B7BC16A00E39B91 /* AppDelegate.m in Sources */,
+				F07E56001B7BC81F00E39B91 /* Universe.m in Sources */,
 				F07E55D81B7BC16A00E39B91 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07E56011B7BC81F00E39B91 /* Universe.m in Sources */,
 				F07E55FC1B7BC1BC00E39B91 /* UniverseTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

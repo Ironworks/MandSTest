@@ -22,6 +22,11 @@
  */
 -(instancetype)initWithDimension:(NSUInteger)dimension {
     
+    if (dimension == 0) {
+        return nil;
+    }
+    
+    
     if (self = [super init]) {
         _minX = 0;
         _minY = 0;
