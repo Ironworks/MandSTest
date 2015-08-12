@@ -49,7 +49,7 @@
  *
  *  @param point point to move to
  *
- *  @return YES if leagal move, otherwise NO
+ *  @return YES if legal move, otherwise NO
  */
 - (BOOL) moveToPoint:(CGPoint)point;
 
