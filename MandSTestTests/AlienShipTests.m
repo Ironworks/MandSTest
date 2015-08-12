@@ -49,7 +49,7 @@
 
 - (void) testAlienShipHasOrientation {
     
-    XCTAssertEqualObjects(alienShip.orientation, ALIENSHIP_ORIENTATION_UP, @"Alienship should have orientation");
+    XCTAssertEqual(alienShip.orientation, ALIEN_SHIP_ORIENTATION_UP, @"Alienship should have orientation");
     
 }
 

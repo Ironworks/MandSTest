@@ -15,6 +15,7 @@
     
     if (self = [super init]) {
         _universe = universe;
+        _orientation = ALIEN_SHIP_ORIENTATION_UP; //Assumption: Default orientation to UP.
     }
     return self;
 }
