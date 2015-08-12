@@ -16,6 +16,9 @@
 		F07E55FC1B7BC1BC00E39B91 /* UniverseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E55FB1B7BC1BC00E39B91 /* UniverseTests.m */; };
 		F07E56001B7BC81F00E39B91 /* Universe.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E55FF1B7BC81F00E39B91 /* Universe.m */; };
 		F07E56011B7BC81F00E39B91 /* Universe.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E55FF1B7BC81F00E39B91 /* Universe.m */; };
+		F07E56031B7BECD600E39B91 /* AlienShipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E56021B7BECD600E39B91 /* AlienShipTests.m */; };
+		F07E56061B7BED5C00E39B91 /* AlienShip.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E56051B7BED5C00E39B91 /* AlienShip.m */; };
+		F07E56071B7BED5C00E39B91 /* AlienShip.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E56051B7BED5C00E39B91 /* AlienShip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		F07E55FB1B7BC1BC00E39B91 /* UniverseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniverseTests.m; sourceTree = "<group>"; };
 		F07E55FE1B7BC81F00E39B91 /* Universe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Universe.h; path = "Model Objects/Universe.h"; sourceTree = "<group>"; };
 		F07E55FF1B7BC81F00E39B91 /* Universe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Universe.m; path = "Model Objects/Universe.m"; sourceTree = "<group>"; };
+		F07E56021B7BECD600E39B91 /* AlienShipTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlienShipTests.m; sourceTree = "<group>"; };
+		F07E56041B7BED5C00E39B91 /* AlienShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlienShip.h; path = "Model Objects/AlienShip.h"; sourceTree = "<group>"; };
+		F07E56051B7BED5C00E39B91 /* AlienShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlienShip.m; path = "Model Objects/AlienShip.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 			children = (
 				F07E55EF1B7BC16A00E39B91 /* Supporting Files */,
 				F07E55FB1B7BC1BC00E39B91 /* UniverseTests.m */,
+				F07E56021B7BECD600E39B91 /* AlienShipTests.m */,
 			);
 			path = MandSTestTests;
 			sourceTree = "<group>";
@@ -129,6 +136,8 @@
 			children = (
 				F07E55FE1B7BC81F00E39B91 /* Universe.h */,
 				F07E55FF1B7BC81F00E39B91 /* Universe.m */,
+				F07E56041B7BED5C00E39B91 /* AlienShip.h */,
+				F07E56051B7BED5C00E39B91 /* AlienShip.m */,
 			);
 			name = "Model Objects";
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07E56061B7BED5C00E39B91 /* AlienShip.m in Sources */,
 				F07E55DE1B7BC16A00E39B91 /* ViewController.m in Sources */,
 				F07E55DB1B7BC16A00E39B91 /* AppDelegate.m in Sources */,
 				F07E56001B7BC81F00E39B91 /* Universe.m in Sources */,
@@ -244,7 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07E56071B7BED5C00E39B91 /* AlienShip.m in Sources */,
 				F07E56011B7BC81F00E39B91 /* Universe.m in Sources */,
+				F07E56031B7BECD600E39B91 /* AlienShipTests.m in Sources */,
 				F07E55FC1B7BC1BC00E39B91 /* UniverseTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
