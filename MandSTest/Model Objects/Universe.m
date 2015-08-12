@@ -10,4 +10,27 @@
 
 @implementation Universe
 
+
+
+/**
+ *  Initialiser for Universe
+ *
+ *  @param dimension Unsigned integer for number of colums and rows in Universe
+ *
+ *
+ *  @return An instance of Universe
+ */
+-(instancetype)initWithDimension:(NSUInteger)dimension {
+    
+    if (self = [super init]) {
+        _minX = 0;
+        _minY = 0;
+        _maxX = dimension;
+        _maxY = dimension;
+    }
+    
+    return self;
+    
+}
+
 @end
