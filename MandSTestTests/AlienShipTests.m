@@ -67,6 +67,40 @@
     
 }
 
+- (void) testAlienShipInRightPositionAfterMovingForward {
+    
+    CGPoint expectedCoordinates = CGPointMake(0, 1);
+    [alienShip performManoeuvre:@"FORWARD"];
+    XCTAssertTrue(CGPointEqualToPoint(alienShip.coordinates, expectedCoordinates), @"alien ship should be at (0,1)");
+    
+}
+
+- (void) testShipCanTurnRight {
+    
+    XCTAssertTrue([alienShip performManoeuvre:@"RIGHT"], @"Alien ship should be able to turn right");
+    
+}
+
+- (void) testShipAtRIghtOrientationAfterTurningRight {
+    
+    [alienShip performManoeuvre:@"RIGHT"];
+    XCTAssertTrue(alienShip.orientation == ALIEN_SHIP_ORIENTATION_RIGHT, @"Alien ship orientation should be to the right");
+    
+}
+
+
+- (void) testShipCanTurnLeft {
+    
+    XCTAssertTrue([alienShip performManoeuvre:@"LEFT"], @"Alien ship shoujld be able to turn left");
+    
+}
+
+- (void) testShipAtRightOrientationAfterTurningLeft {
+    
+    [alienShip performManoeuvre:@"LEFT"];
+    XCTAssertTrue(alienShip.orientation == ALIEN_SHIP_ORIENTATION_LEFT, @"Alien ship orientation should be to the left");
+}
+
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
