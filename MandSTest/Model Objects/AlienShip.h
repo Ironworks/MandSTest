@@ -38,7 +38,22 @@ typedef NS_ENUM(NSUInteger, ALIEN_SHIP_ORIENTATION) {
 @property (nonatomic, readonly, assign) CGPoint coordinates;
 
 
-
+/**
+ *  Designated init method for ALien Ship
+ *
+ *  @param universe The universe the ship lives in
+ *
+ *  @return an instance of AlienShip
+ */
 - (instancetype)initWithUniverse:(Universe *)universe;
+
+/**
+ *  Perform a manoeuvre on the ship
+ *
+ *  @param manoeuvre The manoeuvre to be performed (FORWARD, LEFT, RIGHT)
+ *
+ *  @return Boolean YES if the manoevre is successful, NO if it isn't
+ */
+-(BOOL) performManoeuvre:(NSString *)manoeuvre;
 
 @end
