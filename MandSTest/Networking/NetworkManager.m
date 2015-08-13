@@ -10,4 +10,19 @@
 
 @implementation NetworkManager
 
+/**
+ *  Get the probe navigation data
+ *
+ *  @param email   valid email address
+ *  @param success block to be performed on successful execution
+ *  @param failure block to be performed on unsuccessful execution
+ */
+- (void) probeNavigationGetDataForEmail:(NSString *) email
+                         requestSuccess:(getDirectionsSuccess)success
+                         requestFailure:(requestFailed)failure {
+    
+    
+    
+}
+
 @end
