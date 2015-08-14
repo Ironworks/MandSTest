@@ -19,6 +19,11 @@
 		F07E56031B7BECD600E39B91 /* AlienShipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E56021B7BECD600E39B91 /* AlienShipTests.m */; };
 		F07E56061B7BED5C00E39B91 /* AlienShip.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E56051B7BED5C00E39B91 /* AlienShip.m */; };
 		F07E56071B7BED5C00E39B91 /* AlienShip.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E56051B7BED5C00E39B91 /* AlienShip.m */; };
+		F07E56091B7CC0D000E39B91 /* NetworkManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E56081B7CC0D000E39B91 /* NetworkManagerTests.m */; };
+		F07E560C1B7CC26600E39B91 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F07E560B1B7CC26600E39B91 /* libOCMock.a */; };
+		F07E561A1B7CC47D00E39B91 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E56191B7CC47D00E39B91 /* NetworkManager.m */; };
+		F07E561B1B7CC47D00E39B91 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F07E56191B7CC47D00E39B91 /* NetworkManager.m */; };
+		F07E561D1B7D32A800E39B91 /* Directions.json in Resources */ = {isa = PBXBuildFile; fileRef = F07E561C1B7D32A800E39B91 /* Directions.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,20 @@
 		F07E56021B7BECD600E39B91 /* AlienShipTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlienShipTests.m; sourceTree = "<group>"; };
 		F07E56041B7BED5C00E39B91 /* AlienShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlienShip.h; path = "Model Objects/AlienShip.h"; sourceTree = "<group>"; };
 		F07E56051B7BED5C00E39B91 /* AlienShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlienShip.m; path = "Model Objects/AlienShip.m"; sourceTree = "<group>"; };
+		F07E56081B7CC0D000E39B91 /* NetworkManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManagerTests.m; sourceTree = "<group>"; };
+		F07E560B1B7CC26600E39B91 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		F07E560E1B7CC27300E39B91 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		F07E560F1B7CC27300E39B91 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		F07E56101B7CC27300E39B91 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		F07E56111B7CC27300E39B91 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		F07E56121B7CC27300E39B91 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		F07E56131B7CC27300E39B91 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		F07E56141B7CC27300E39B91 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		F07E56151B7CC27300E39B91 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		F07E56161B7CC27300E39B91 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		F07E56181B7CC47D00E39B91 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkManager.h; path = Networking/NetworkManager.h; sourceTree = "<group>"; };
+		F07E56191B7CC47D00E39B91 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkManager.m; path = Networking/NetworkManager.m; sourceTree = "<group>"; };
+		F07E561C1B7D32A800E39B91 /* Directions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Directions.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07E560C1B7CC26600E39B91 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +111,7 @@
 		F07E55D41B7BC16A00E39B91 /* MandSTest */ = {
 			isa = PBXGroup;
 			children = (
+				F07E56171B7CC45A00E39B91 /* Networking */,
 				F07E55FD1B7BC7F300E39B91 /* Model Objects */,
 				F07E55D91B7BC16A00E39B91 /* AppDelegate.h */,
 				F07E55DA1B7BC16A00E39B91 /* AppDelegate.m */,
@@ -116,9 +137,11 @@
 		F07E55EE1B7BC16A00E39B91 /* MandSTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				F07E55EF1B7BC16A00E39B91 /* Supporting Files */,
+				F07E560A1B7CC25200E39B91 /* OCMock */,
+				F07E56081B7CC0D000E39B91 /* NetworkManagerTests.m */,
 				F07E55FB1B7BC1BC00E39B91 /* UniverseTests.m */,
 				F07E56021B7BECD600E39B91 /* AlienShipTests.m */,
+				F07E55EF1B7BC16A00E39B91 /* Supporting Files */,
 			);
 			path = MandSTestTests;
 			sourceTree = "<group>";
@@ -126,6 +149,7 @@
 		F07E55EF1B7BC16A00E39B91 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F07E561C1B7D32A800E39B91 /* Directions.json */,
 				F07E55F01B7BC16A00E39B91 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -140,6 +164,40 @@
 				F07E56051B7BED5C00E39B91 /* AlienShip.m */,
 			);
 			name = "Model Objects";
+			sourceTree = "<group>";
+		};
+		F07E560A1B7CC25200E39B91 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				F07E560B1B7CC26600E39B91 /* libOCMock.a */,
+				F07E560D1B7CC27300E39B91 /* OCMock */,
+			);
+			name = OCMock;
+			sourceTree = "<group>";
+		};
+		F07E560D1B7CC27300E39B91 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				F07E560E1B7CC27300E39B91 /* NSNotificationCenter+OCMAdditions.h */,
+				F07E560F1B7CC27300E39B91 /* OCMArg.h */,
+				F07E56101B7CC27300E39B91 /* OCMConstraint.h */,
+				F07E56111B7CC27300E39B91 /* OCMLocation.h */,
+				F07E56121B7CC27300E39B91 /* OCMMacroState.h */,
+				F07E56131B7CC27300E39B91 /* OCMock.h */,
+				F07E56141B7CC27300E39B91 /* OCMockObject.h */,
+				F07E56151B7CC27300E39B91 /* OCMRecorder.h */,
+				F07E56161B7CC27300E39B91 /* OCMStubRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		F07E56171B7CC45A00E39B91 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F07E56181B7CC47D00E39B91 /* NetworkManager.h */,
+				F07E56191B7CC47D00E39B91 /* NetworkManager.m */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07E561D1B7D32A800E39B91 /* Directions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +305,7 @@
 				F07E55DE1B7BC16A00E39B91 /* ViewController.m in Sources */,
 				F07E55DB1B7BC16A00E39B91 /* AppDelegate.m in Sources */,
 				F07E56001B7BC81F00E39B91 /* Universe.m in Sources */,
+				F07E561A1B7CC47D00E39B91 /* NetworkManager.m in Sources */,
 				F07E55D81B7BC16A00E39B91 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,8 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F07E56071B7BED5C00E39B91 /* AlienShip.m in Sources */,
+				F07E56091B7CC0D000E39B91 /* NetworkManagerTests.m in Sources */,
 				F07E56011B7BC81F00E39B91 /* Universe.m in Sources */,
 				F07E56031B7BECD600E39B91 /* AlienShipTests.m in Sources */,
+				F07E561B1B7CC47D00E39B91 /* NetworkManager.m in Sources */,
 				F07E55FC1B7BC1BC00E39B91 /* UniverseTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,8 +465,23 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/MandSTestTests",
+				);
 				INFOPLIST_FILE = MandSTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MandSTestTests",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MandSTest.app/MandSTest";
 			};
@@ -418,8 +495,23 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/MandSTestTests",
+				);
 				INFOPLIST_FILE = MandSTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MandSTestTests",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MandSTest.app/MandSTest";
 			};
