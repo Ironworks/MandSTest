@@ -132,4 +132,83 @@ typedef NS_ENUM(NSUInteger, HTTPStatusCode) {
     
 }
 
+/**
+ *  Submit probe coordinates
+ *
+ *  @param email   valid email address
+ *  @param coordinates the coordinates to be posted to the back end
+ *  @param success block to be perfomed on successful execution
+ *  @param failure block to be performed on unsuccessful execution
+ */
+- (void) probeNavigationSubmitDataForEmail:(NSString *)email
+                               coordinates:(CGPoint)coordinates
+                            requestSuccess:(submitDataSuccess)success
+                            requestFailure:(requestFailed)failure {
+
+    NSParameterAssert(email);
+
+    //Create session
+    NSURLSession *session = [self session];
+    
+    NSString *urlString = [NSString stringWithFormat:@"%@submitdata/%@/%.0f/%.0f",
+                           kBaseURL,
+                           email,
+                           coordinates.x,
+                           coordinates.y];
+    
+    NSMutableURLRequest *request = [self mutableRequestForURLString:urlString];
+    
+    [[session dataTaskWithRequest:request
+                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                    
+                NSError *jsonError;
+                NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data
+                                                                     options:NSJSONReadingAllowFragments
+                                                                       error:&jsonError];
+                //Check status code for request
+                NSHTTPURLResponse *httpResp = (NSHTTPURLResponse *)response;
+                if (httpResp.statusCode == HTTPStatusCodeOK) {
+                    
+                    if (json[@"Message"]) {
+                        NSString *message = json[@"Message"];
+                        NSNumber *statusCode = json[@"StatusCode"];
+                        
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            if (success) {
+                                success(message, [statusCode integerValue]);
+                            }
+                        });
+                        
+                    }
+                    
+                } else if (httpResp.statusCode == HTTPStatusCodeInternalError) {
+                    
+                    if (json[@"Message"]) {
+                        NSString *message = json[@"Message"];
+                        NSNumber *statusCode = json[@"StatusCode"];
+                        
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            if (failure) {
+                                failure(message, [statusCode integerValue]);
+                            }
+                        });
+                        
+                    }
+                    
+                } else {
+                    
+                    //Something else has gone wrong
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        if (failure) {
+                            failure(@"Unknown error occured", 999);
+                            
+                        }
+                    });
+                }
+                
+            }] resume];
+
+    
+}
+
 @end

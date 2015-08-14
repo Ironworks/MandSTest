@@ -5,7 +5,7 @@
 //  Created by Trevor Doodes on 13/08/2015.
 //  Copyright (c) 2015 Ironworks Media Limited. All rights reserved.
 //
-
+@import CoreGraphics;
 #import <Foundation/Foundation.h>
 
 @interface NetworkManager : NSObject
@@ -17,14 +17,23 @@
  */
 typedef void (^getDirectionsSuccess) (NSArray *directionsArray);
 
-
 /**
  *  API request failed
  *
- *  @param message    Human redable message
+ *  @param message    Human readable message
  *  @param statusCode int error code
  */
 typedef void (^requestFailed) (NSString *message, NSInteger statusCode);
+
+
+/**
+ *  Submit data successful
+ *
+ *  @param message    Human readable message
+ *  @param statusCode int error code
+ */
+typedef void (^submitDataSuccess) (NSString *message, NSInteger statusCode);
+
 
 
 /**
@@ -37,6 +46,19 @@ typedef void (^requestFailed) (NSString *message, NSInteger statusCode);
 - (void) probeNavigationGetDataForEmail:(NSString *) email
                          requestSuccess:(getDirectionsSuccess)success
                          requestFailure:(requestFailed)failure;
+
+/**
+ *  Submit probe coordinates
+ *
+ *  @param email   valid email address
+ *  @param coordinates the coordinates to be posted to the back end
+ *  @param success block to be perfomed on successful execution
+ *  @param failure block to be performed on unsuccessful execution
+ */
+- (void) probeNavigationSubmitDataForEmail:(NSString *)email
+                               coordinates:(CGPoint)coordinates
+                            requestSuccess:(submitDataSuccess)success
+                            requestFailure:(requestFailed)failure;
 
 
 @end
